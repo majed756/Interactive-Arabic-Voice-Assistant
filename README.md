@@ -22,9 +22,11 @@ Microphone  (Live Voice)
  1. Local          Whisper STT ──► Transcribes Arabic audio locally using CPU                  
     (Text Prompt)
           ▼.
+    
  2. Cohere LLM:    Command-R ──► Processes turn context & generates Arabic response
     (Response Text) 
           ▼.
+    
  3. gTTS+          Pygame TTS   ──► Converts response to MP3 & plays audio out loud
 ---
 
