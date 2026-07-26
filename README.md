@@ -20,19 +20,19 @@ An interactive, real-time voice-to-voice conversational AI system built in Pytho
 │  Microphone     │
 └────────┬────────┘
 │ (Live Voice)
-▼
+▼.
 ┌─────────────────┐
 │ 1. Local        │ ──► Transcribes Arabic audio locally using CPU
 │    Whisper STT  │
 └────────┬────────┘
 │ (Text Prompt)
-▼
+▼.
 ┌─────────────────┐
 │ 2. Cohere LLM   │ ──► Processes turn context & generates Arabic response
 │    Command-R    │
 └────────┬────────┘
 │ (Response Text)
-▼
+▼.
 ┌─────────────────┐
 │ 3. gTTS +       │ ──► Converts response to MP3 & plays audio out loud
 │    Pygame TTS   │
@@ -187,9 +187,10 @@ if __name__ == "__main__":
 Install all required dependencies:
 
 Bash
-python -m pip install openai-whisper cohere gTTS pygame SpeechRecognition PyAudio
+python -m pip install openai-whisper cohere gTTS pygame SpeechRecognition PyAudio.
+
 Configure API Key:
-Get a free Trial Key from Cohere Dashboard and insert it into line 19 of main.py:
+Get a free Trial Key from Cohere Dashboard and insert it into line 19 of 'main.py'.
 
 Python
 COHERE_API_KEY = "YOUR_FREE_COHERE_API_KEY"
@@ -198,5 +199,4 @@ COHERE_API_KEY = "YOUR_FREE_COHERE_API_KEY"
 🎯 How to Run
 Execute the program from your terminal:
 
-Bash
-python main.py
+
