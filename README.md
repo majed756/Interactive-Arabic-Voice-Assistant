@@ -17,17 +17,15 @@ An interactive, real-time voice-to-voice conversational AI system built in Pytho
 ## 🏗️ System Architecture
 
 Microphone  (Live Voice)
-           ▼
+           
 
  1. Local          Whisper STT ──► Transcribes Arabic audio locally using CPU                  
     (Text Prompt)
-          ▼.
-    
- 2. Cohere LLM:    Command-R ──► Processes turn context & generates Arabic response
-    (Response Text) 
-          ▼.
-    
- 3. gTTS+          Pygame TTS   ──► Converts response to MP3 & plays audio out loud
+      
+ 3. Cohere LLM:    Command-R ──► Processes turn context & generates Arabic response
+    (Response Text)
+      
+ 4. gTTS+          Pygame TTS   ──► Converts response to MP3 & plays audio out loud
 ---
 
 ## 📦 Required Libraries & Dependencies
